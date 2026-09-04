@@ -1,0 +1,101 @@
+* {
+    font-family: roboto,arial;
+}
+.logo {
+    width:50px;
+    margin-right: 100px;
+}
+.header-div {
+    display: flex;
+    padding: 10px 30px ;
+    align-items: center;
+}
+nav {
+    display: flex;
+    gap: 30px;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    white-space: nowrap;
+    font-weight: 400;
+    font-family: arial;
+    padding: 10px 0;
+    position: relative;
+}
+nav a::after {
+    content: "";
+    position:absolute;
+    bottom: 0;
+    height: 2px;
+    background: #333;
+    left: 0;
+    width: 0;
+    transition: width 0.3 ease;
+}
+nav a:hover::after {
+    width:100%;
+}
+video {
+    width: 90%;
+    max-width: 1300px;
+    display: block;
+    margin: 0 auto;
+}
+.vid-title {
+    text-align: center;
+    font-weight: 700;
+}
+.gallery-button {
+    background-color: black;
+    color:white;
+    border: none;
+    padding: 15px 15px;
+    padding-left: 38px;
+    padding-right: 38px;
+    font-family: roboto;
+    font-size: 18px;
+    transition: padding 0.3s;
+    cursor: pointer;
+}
+.gallery-button:hover {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 39px;
+    padding-right: 39px;
+}
+.gallery-div {
+    display: grid;
+    place-content: center;
+    margin-top: 30px;
+}
+/*
+* {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.header-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.logo {
+    width: 50px;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+} */
+
